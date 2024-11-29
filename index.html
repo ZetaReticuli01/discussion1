@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Discussion Portal</h1>
+            <div class="header-actions">
+                <button id="newQuestionBtn">New Question Form</button>
+                <input type="text" id="searchBox" placeholder="Search questions...">
+            </div>
+        </header>
+        <main class="main">
+            <section class="left-pane" id="leftPane">
+                <!-- Questions will be dynamically added here -->
+            </section>
+            <section class="right-pane" id="rightPane">
+                <!-- Default Question Form -->
+                <form id="questionForm">
+                    <h2>Add a New Question</h2>
+                    <div class="form-group">
+                        <label for="questionTitle">Title</label>
+                        <input type="text" id="questionTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="questionText">Question</label>
+                        <textarea id="questionText" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
